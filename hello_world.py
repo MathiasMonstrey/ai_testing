@@ -189,7 +189,7 @@ def main(argv):
     )
     options = parser.parse_args(argv)
     try:
-        hello_spot(options)
+        hello_spot()
         return True
     except Exception as exc:  # pylint: disable=broad-except
         logger = bosdyn.client.util.get_logger()
